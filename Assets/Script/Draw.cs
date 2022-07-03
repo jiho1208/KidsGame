@@ -18,7 +18,7 @@ public class Draw : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        if (Input.GetMouseButton(0) && time >= 0.01 && isOn)
+        if (Input.GetMouseButton(0) && time >= 0.007 && isOn)
         {
             time = 0;
             mousepos = cam.ScreenToWorldPoint(Input.mousePosition);

@@ -20,6 +20,10 @@ public class Click : MonoBehaviour
     private GameObject BananaBackButton;
     [SerializeField]
     private GameObject DestroyCollider;
+    [SerializeField]
+    private GameObject NumberCardSet;
+    [SerializeField]
+    private GameObject NumberCardUI;
     void Start()
     {
         isClick = true;
@@ -70,5 +74,19 @@ public class Click : MonoBehaviour
         DestroyCollider.SetActive(true);
         yield return new WaitForSeconds(0.1f);
         DestroyCollider.SetActive(false);
+    }
+
+    public void CardSelect()
+    {
+        StageSelectSet.SetActive(false);
+        NumberCardSet.SetActive(true);
+        NumberCardUI.SetActive(true);
+    }
+
+    public void CardBackSelect()
+    {
+        NumberCardUI.SetActive(false);
+        NumberCardSet.SetActive(false);
+        StageSelectSet.SetActive(true);
     }
 }
