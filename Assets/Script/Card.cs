@@ -10,8 +10,7 @@ public class Card : MonoBehaviour
     bool change = false;
     GameObject hit1;
     GameObject hit2;
-    [SerializeField]
-    private Sprite[] image;
+    public Sprite[] image;
     void Start()
     {
 
@@ -46,6 +45,42 @@ public class Card : MonoBehaviour
                         case "four":
                             hit1.GetComponent<SpriteRenderer>().sprite = image[4];
                             break;
+                        case "Circle":
+                            hit1.GetComponent<SpriteRenderer>().sprite = image[5];
+                            break;
+                        case "Square":
+                            hit1.GetComponent<SpriteRenderer>().sprite = image[6];
+                            break;
+                        case "Triangle":
+                            hit1.GetComponent<SpriteRenderer>().sprite = image[7];
+                            break;
+                        case "Star":
+                            hit1.GetComponent<SpriteRenderer>().sprite = image[8];
+                            break;
+                        case "Red":
+                            hit1.GetComponent<SpriteRenderer>().sprite = image[9];
+                            break;
+                        case "Yellow":
+                            hit1.GetComponent<SpriteRenderer>().sprite = image[10];
+                            break;
+                        case "Green":
+                            hit1.GetComponent<SpriteRenderer>().sprite = image[11];
+                            break;
+                        case "Blue":
+                            hit1.GetComponent<SpriteRenderer>().sprite = image[12];
+                            break;
+                        case "丑":
+                            hit1.GetComponent<SpriteRenderer>().sprite = image[13];
+                            break;
+                        case "中":
+                            hit1.GetComponent<SpriteRenderer>().sprite = image[14];
+                            break;
+                        case "之":
+                            hit1.GetComponent<SpriteRenderer>().sprite = image[15];
+                            break;
+                        case "予":
+                            hit1.GetComponent<SpriteRenderer>().sprite = image[16];
+                            break;
                     }
                 }
                 else
@@ -71,6 +106,42 @@ public class Card : MonoBehaviour
                             case "four":
                                 hit2.GetComponent<SpriteRenderer>().sprite = image[4];
                                 break;
+                            case "Circle":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[5];
+                                break;
+                            case "Square":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[6];
+                                break;
+                            case "Triangle":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[7];
+                                break;
+                            case "Star":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[8];
+                                break;
+                            case "Red":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[9];
+                                break;
+                            case "Yellow":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[10];
+                                break;
+                            case "Green":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[11];
+                                break;
+                            case "Blue":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[12];
+                                break;
+                            case "丑":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[13];
+                                break;
+                            case "中":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[14];
+                                break;
+                            case "之":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[15];
+                                break;
+                            case "予":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[16];
+                                break;
                         }
                     }
                     else
@@ -89,6 +160,42 @@ public class Card : MonoBehaviour
                                 break;
                             case "four":
                                 hit2.GetComponent<SpriteRenderer>().sprite = image[4];
+                                break;
+                            case "Circle":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[5];
+                                break;
+                            case "Square":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[6];
+                                break;
+                            case "Triangle":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[7];
+                                break;
+                            case "Star":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[8];
+                                break;
+                            case "Red":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[9];
+                                break;
+                            case "Yellow":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[10];
+                                break;
+                            case "Green":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[11];
+                                break;
+                            case "Blue":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[12];
+                                break;
+                            case "丑":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[13];
+                                break;
+                            case "中":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[14];
+                                break;
+                            case "之":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[15];
+                                break;
+                            case "予":
+                                hit2.GetComponent<SpriteRenderer>().sprite = image[16];
                                 break;
                         }
                         StartCoroutine(CardCheck());

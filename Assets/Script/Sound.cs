@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class test : MonoBehaviour
+public class Sound : MonoBehaviour
 {
     void Start()
     {
@@ -12,9 +12,5 @@ public class test : MonoBehaviour
     void Update()
     {
         
-    }
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        Debug.Log("¿¿æ÷");
     }
 }
